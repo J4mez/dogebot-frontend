@@ -73,10 +73,24 @@
       </div>
     </div>
 
-
     <h1>Hello World</h1>
 
-    <h1> Here is the new website for DogeBot</h1>
+    <h1>Here is the new website for DogeBot</h1>
+    <h2>It is still in development</h2>
+    <h3>But you can still login and use the bot</h3>
+    <h4>It is still in development</h4>
+    
+
+    <!-- Ask api for content -->
+    <script>
+      const url = "http://localhost:4433/content";
+      fetch(url).then((response) => {
+        response.json().then((data) => {
+          console.log(data.title);
+        });
+      });
+    </script>
+
 
     <!-- Footer -->
     <footer
